@@ -32,7 +32,7 @@ const router = createRouter({
       component: TodoList
     },
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -41,7 +41,7 @@ const router = createRouter({
       component: LoginView
     },
     {
-      path: '/sign_up',
+      path: '/',
       name: 'signup',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
