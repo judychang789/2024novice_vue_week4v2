@@ -73,7 +73,7 @@
           <!-- onclick="javascript:location.href='#todoListPage'"
           @click="signUpButton" -->
           <!-- <a class="formControls_btnLink" href="#loginPage">登入</a> -->
-          <a class="formControls_btnLink" href="/login">登入</a>
+          <a class="formControls_btnLink" href="#/">登入</a>
         </form>
       </div>
     </div>
@@ -141,7 +141,7 @@ const signUpButton = async () => {
     // 註冊成功後 2 秒鐘後跳轉至登入頁，並帶入 email
     setTimeout(() => {
       router.push({
-        path: '/login',
+        path: '/',
         query: { email: signUpField.value.email }
       })
     }, 2000)

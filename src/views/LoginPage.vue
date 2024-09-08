@@ -41,7 +41,7 @@
           />
           <input class="formControls_btnSubmit" type="button" value="登入" @click="signInButton" />
           <!-- onclick="javascript:location.href='/TodoList'" -->
-          <a class="formControls_btnLink" href="/sign_up">註冊帳號</a>
+          <a class="formControls_btnLink" href="#/sign_up">註冊帳號</a>
         </form>
       </div>
     </div>

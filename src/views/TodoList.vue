@@ -8,7 +8,7 @@
             ><span>{{ nickname }}的代辦</span></a
           >
         </li>
-        <li><a href="/login">登出</a></li>
+        <li><a href="/">登出</a></li>
       </ul>
     </nav>
     <div class="container todoListPage vhContainer">
