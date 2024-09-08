@@ -1,8 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 //import HomeView from '../views/HomeView.vue'
 
+import LoginView from '@/views/LoginPage.vue'
+import SignupPage from '@/views/SignupPage.vue'
+import TodoList from '@/views/TodoList.vue'
+
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  //history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL), // 使用 createWebHashHistory
   routes: [
     // {
     //   path: '/',
@@ -23,7 +28,8 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/TodoList.vue')
+      //component: () => import('../views/TodoList.vue')
+      component: TodoList
     },
     {
       path: '/login',
@@ -31,7 +37,8 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/LoginPage.vue')
+      //component: () => import('../views/LoginPage.vue')
+      component: LoginView
     },
     {
       path: '/sign_up',
@@ -39,7 +46,8 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/SignupPage.vue')
+      //component: () => import('../views/SignupPage.vue')
+      component: SignupPage
     }
   ]
 })
