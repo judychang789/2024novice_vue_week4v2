@@ -2,8 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 //import HomeView from '../views/HomeView.vue'
 
 import LoginPage from '@/views/LoginPage.vue'
-import SignupPage from '@/views/SignupPage.vue'
-import TodoList from '@/views/TodoList.vue'
+//import SignupPage from '@/views/SignupPage.vue'
+//import TodoList from '@/views/TodoList.vue'
 
 const router = createRouter({
   //history: createWebHistory(import.meta.env.BASE_URL),
