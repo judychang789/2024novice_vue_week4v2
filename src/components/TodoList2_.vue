@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="container">
     <h1>TODO LIST</h1>
     <div class="card input">
@@ -102,4 +102,4 @@ input[type='checkbox'] {
   color: red;
   cursor: pointer;
 }
-</style>
+</style> -->
