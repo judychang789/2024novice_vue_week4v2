@@ -1,5 +1,6 @@
 <template>
-  <div class="item">
+  123
+  <!-- <div class="item">
     <i>
       <slot name="icon"></slot>
     </i>
@@ -9,7 +10,7 @@
       </h3>
       <slot></slot>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style scoped></style>
