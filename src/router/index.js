@@ -23,15 +23,6 @@ const router = createRouter({
     //   component: () => import('../views/AboutView.vue')
     // },
     {
-      path: '/todolist',
-      name: 'todolist',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      //component: () => import('../views/TodoList.vue')
-      component: TodoList
-    },
-    {
       path: '/',
       name: 'login',
       // route level code-splitting
@@ -41,13 +32,22 @@ const router = createRouter({
       component: LoginPage
     },
     {
+      path: '/todolist',
+      name: 'todolist',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/TodoList.vue')
+      //component: TodoList
+    },
+    {
       path: '/sign_up',
       name: 'signup',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      //component: () => import('../views/SignupPage.vue')
-      component: SignupPage
+      component: () => import('../views/SignupPage.vue')
+      //component: SignupPage
     }
   ]
 })
