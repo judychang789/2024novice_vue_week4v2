@@ -23,13 +23,13 @@
         <div class="card card_list todoList_list">
           <ul class="tab todoList_tab">
             <li :class="{ active: currentTab === '全部' }" @click="currentTab = '全部'">
-              <a href="#">全部</a>
+              <a href="javascript:void(0);">全部</a>
             </li>
             <li :class="{ active: currentTab === '待完成' }" @click="currentTab = '待完成'">
-              <a href="#">待完成</a>
+              <a href="javascript:void(0);">待完成</a>
             </li>
             <li :class="{ active: currentTab === '已完成' }" @click="currentTab = '已完成'">
-              <a href="#">已完成</a>
+              <a href="javascript:void(0);">已完成</a>
             </li>
           </ul>
           <div class="cart_content todoList_items">
